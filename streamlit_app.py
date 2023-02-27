@@ -41,7 +41,7 @@ try:
     streamlit.error("Please select a fruit")
   else:
      # prints dataframe
-    val back = get_fruityvice_data(fruit_choice)
+    back = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back)
 except URLError as e:
   streamlit.error()
